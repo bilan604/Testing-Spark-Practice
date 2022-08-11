@@ -1,5 +1,4 @@
 import pytest
-
 from common.count_and_say import CountAndSay
 
 @pytest.mark.parametrize("input,expected", 
@@ -8,6 +7,6 @@ from common.count_and_say import CountAndSay
     [8,"1113213211"],
     [12,"3113112221232112111312211312113211"]],
     ids=["case 1", "case 2"])
-def test_countAndSay(input: str, expected: int):
+def test_say(input: int, expected: str):
     actual = CountAndSay.say(input)
     assert actual == expected
