@@ -1,6 +1,6 @@
 import pytest
 
-from common.parser import Parser
+from tests.common.parser import Parser
 
 @pytest.mark.parametrize("input,expected", 
     [["1", 1],
@@ -11,3 +11,5 @@ from common.parser import Parser
 def test_parse(input: str, expected: int):
     actual = Parser.str_to_int(input)
     assert actual == expected
+
+print("Done")
