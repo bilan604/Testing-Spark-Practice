@@ -3,10 +3,11 @@ import pytest
 from pyspark.sql import SparkSession, Row
 from pyspark_test import assert_pyspark_df_equal
 
-from common.spark import inner_join
+
+from hello_spark import inner_join, left_join, right_join, outer_join
+
 
 def test_join(spark_session: SparkSession):
-    # Given
     df_left = spark_session.createDataFrame([
         Row(key=1, name="a"),
         Row(key=2, name="b"),
