@@ -13,7 +13,6 @@ from common.functions.hello_spark import inner_join
 @pytest.mark.parametrize("input1, input2, expected", 
     [[df_left, df_right, 1]],
     ids=["case 1"])
-
 def test_inner_join(df_left: DataFrame, df_right: DataFrame, df_expected: DataFrame):
     df_actual = inner_join(df_left, df_right)
     assert df_actual == df_expected
