@@ -1,7 +1,11 @@
 from data_conversion import *
-from review_bot import *
+from review_bot import GlassdoorReviewScrapper
+import re
+from time
+import requests
+import BeautifulSoup
 
-# webscrapping:
+
 grs = GlassdoorReviewScrapper('https://www.glassdoor.com/Reviews/SynergisticIT-Reviews-E424823.htm?filter.iso3Language=eng')
 grs.scrape()
 

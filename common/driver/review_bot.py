@@ -1,5 +1,5 @@
 import re
-import time
+from time
 import requests
 import BeautifulSoup
 
@@ -40,7 +40,6 @@ class GlassdoorReviewScrapper(object):
         
         rating = self.soup.find_all('span', attrs={"class": "ratingNumber mr-xsm"})
         rating = [re.sub("<(.)+?>", "", str(r)) for r in rating]
-        
         return rater, pros, cons, rating
 
     # main function
