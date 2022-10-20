@@ -1,5 +1,5 @@
 import pytest
-from common.count_and_say import CountAndSay
+from commonFunctions.count_and_say import CountAndSay
 
 @pytest.mark.parametrize("input,expected", 
     [[1, "1"],

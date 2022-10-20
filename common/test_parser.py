@@ -1,6 +1,6 @@
 import pytest
 
-from common.parser import Parser
+from commonFunctions.parser import Parser
 
 @pytest.mark.parametrize("input,expected", 
     [["1", 1],

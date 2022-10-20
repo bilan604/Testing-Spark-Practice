@@ -3,7 +3,7 @@ import pytest
 from pyspark.sql import SparkSession, Row
 from pyspark_test import assert_pyspark_df_equal
 
-from common.spark_demo import inner_join
+from commonFunctions.spark_demo import inner_join
 
 def test_join(spark_session: SparkSession):
     # Given

@@ -11,7 +11,7 @@ class TreeNode:
 
 
 class Algorithms:
-    # BFS Elimination, 5099% memory efficiency
+    # BFS Elimination, 50% | 99% memory efficiency
     @staticmethod
     def orangesRotting(grid: List[List[int]]) -> int:
         fresh = []
@@ -45,4 +45,4 @@ class Algorithms:
             return float('inf')
         if not root.left and not root.right:  
             return 1
-        return min(1 + recu(root.left), 1 + recu(root.right))
+        return min(1 + Algorithms.recu(root.left), 1 + Algorithms.recu(root.right))
