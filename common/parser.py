@@ -1,7 +1,12 @@
+import json
 from __future__ import annotations
 
 
 class Parser(tuple[int, int]):
     @staticmethod
-    def parse(str_dimonsion: str):
-        return int(str_dimonsion)
+    def str_to_int(s: str):
+        return int(s)
+    
+    @staticmethod
+    def json_to_df(s: str):
+        return json.loads(s)
